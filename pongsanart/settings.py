@@ -25,7 +25,7 @@ SECRET_KEY = '@0-sqm&n*^n$i$-8ju3%74#j8x&ixd0v$5!6n*%9oor1^at#6a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'pongsanart.pythonanywhere.com']
+ALLOWED_HOSTS = [u'pongsanart.pythonanywhere.com','127.0.0.1','localhost']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myapp',
 ]
 
 MIDDLEWARE = [
