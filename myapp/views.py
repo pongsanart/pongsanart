@@ -23,3 +23,11 @@ def index(req):
         print(services)
         return render(req, 'myapp/index.html', { 'services': services })
 
+def home(req):
+        return render(req, 'myapp/home.html')
+
+def victims(req):
+        return render(req, 'myapp/victims.html')
+
+
+

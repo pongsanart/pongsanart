@@ -6,10 +6,7 @@
     <meta name="description" content="django form with utf-8">
     <meta name="author" content="wichit2s">
     <title>Linux Services</title>
-
     {% load static %}
-    
-
     <style>
       .filled {
         width: 80%;
@@ -26,18 +23,22 @@
       <section class="filled">
         <form action="index" method="POST" enctype="multipart/form-data;charset=UTF-8">
           {% csrf_token %}
-          <div class="spacing"><input class="filled" type="text" name="icon" value="icon ไอคอน"/></div>
-          <div class="spacing"><input class="filled" type="text" name="title" value="title บริการ"/></div>
-          <div class="spacing"><input class="filled" type="text" name="detail" value="detail รายละเอียด"/></div>
+          name :
+          <div class="spacing"><input class="filled" type="text" name="icon" value=""/></div>
+          phone number :
+          <div class="spacing"><input class="filled" type="text" name="title" value=""/></div>
+          serviceable :
+          <div class="spacing"><input class="filled" type="text" name="detail" value=""/></div>
+
           <div class="spacing"><button style="padding: 2em;" type="submit">Submit</button></div>
         </form>
       </section>
       <div>
        <table style="width:80%; border: 1px solid black; padding: 1em;">
         <tr>
-          <th>Icon</th>
-          <th>Title</th>
-          <th>Detail</th>
+          <th> name </th>
+          <th>phone number</th>
+          <th> serviceable</th>
         </tr>
         {% for s in services %}
         <tr>
@@ -47,13 +48,9 @@
         </tr>
         {% endfor %}
       </table> 
-      </div>
-    </div>
-    <footer>
-      <div>
-        <div>Copyright &copy; 2019 </div>
-      </div>
-    </footer>
-  </body>
+      </div> 
 
+    </div>
+  
+  </body>
 </html>

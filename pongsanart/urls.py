@@ -4,6 +4,9 @@ from myapp import views as appview
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',appview.index),
-    path('index',appview.index),
+    path('',appview.home),
+    path('index/',appview.index),
+    path('victims',appview.victims),
+
+
 ]
